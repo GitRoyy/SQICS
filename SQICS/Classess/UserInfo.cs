@@ -24,5 +24,7 @@ namespace SQICS.Classess
         public string given_name { get; set; }
         [DataMember]
         public string family_name { get; set; }
+
+
     }
 }

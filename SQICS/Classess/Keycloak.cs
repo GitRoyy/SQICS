@@ -54,5 +54,19 @@ namespace SQICS.Classess
                 return new Uri(protocol + "://" + host + ":" + port + "/auth/realms/" + realmName + endpoint);
             }
         }
+
+        public Uri GetAuthoUri()
+        {
+            string endpoint = "/protocol/openid-connect/auth";
+
+            if (Debugger.IsAttached)
+            {
+                return new Uri(protocol + "://" + host + ":" + port + "/auth/realms/" + realmName + endpoint);
+            }
+            else
+            {
+                return new Uri(protocol + "://" + host + ":" + port + "/auth/realms/" + realmName + endpoint);
+            }
+        }
     }
 }

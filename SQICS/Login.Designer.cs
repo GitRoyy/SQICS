@@ -50,6 +50,7 @@ namespace SQICS
             this.textBoxPassword.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textBoxPassword.Location = new System.Drawing.Point(116, 84);
             this.textBoxPassword.Name = "textBoxPassword";
+            this.textBoxPassword.PasswordChar = '*';
             this.textBoxPassword.PlaceholderText = "Password";
             this.textBoxPassword.Size = new System.Drawing.Size(197, 29);
             this.textBoxPassword.TabIndex = 1;
@@ -81,6 +82,7 @@ namespace SQICS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
             this.ClientSize = new System.Drawing.Size(434, 215);
             this.ControlBox = false;
             this.Controls.Add(this.buttonExit);
@@ -89,6 +91,7 @@ namespace SQICS
             this.Controls.Add(this.textBoxUsername);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Login";
+            this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SQICS - Login";
             this.TopMost = true;
